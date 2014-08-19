@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin 
+id="com.demobo.cordova.volume"
+version="0.0.1"
+xmlns="http://apache.org/cordova/ns/plugins/1.0" >
+
+<name>CorHttpd</name>
+<description>Volume button plugin for Cordova</description>
+<author>de Mobo</author>
+<license>MIT</license>
+<keywords>volume button, ios</keywords>
+<repo>https://github.com/demobo-com/volume_plugin.git</repo>
+<issue>https://github.com/demobo-com/volume_plugin/issues</issue>
+
+<engines>
+    <engine name="cordova" version=">=2.9" />
+</engines>
+
+<js-module name="Volume" src="www/volume_plugin.js">
+<clobbers target="cordova.plugins.Volume" />
+</js-module>
+
+<platform name="ios">
+
+<config-file parent="/*" target="config.xml">
+<feature name="Volume">
+<param name="ios-package" value="Volume" />
+</feature>
+</config-file>
+
+<source-file src="src/ios/Volume.m" />
+
+<source-file src="src/ios/VolumeListener/AppDelegate.h" />
+<source-file src="src/ios/VolumeListener/AppDelegate.m" />
+<source-file src="src/ios/VolumeListener/main.m" />
+<source-file src="src/ios/VolumeListener/silence.mp3" />
+<source-file src="src/ios/VolumeListener/VLViewController.h" />
+<source-file src="src/ios/VolumeListener/VLViewController.m" />
+<source-file src="src/ios/VolumeListener/VolumeListener.h" />
+<source-file src="src/ios/VolumeListener/VolumeListener.m" />
+
+<framework src="MediaPlayer.framework" />
+<framework src="AVFoundation.framework" />
+<framework src="UIKit.framework" />
+<framework src="Foundation.framework" />
+<framework src="CoreGraphics.framework" />
+
+</platform>
+
+</plugin>
