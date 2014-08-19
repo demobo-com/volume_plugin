@@ -28,7 +28,8 @@ xmlns="http://apache.org/cordova/ns/plugins/1.0" >
 </feature>
 </config-file>
 
-<source-file src="src/ios/Volume.m" />
+<header-file src="src/ios/VolumePlugin.h" />
+<source-file src="src/ios/VolumePlugin.m" />
 
 <source-file src="src/ios/VolumeListener/AppDelegate.h" />
 <source-file src="src/ios/VolumeListener/AppDelegate.m" />
