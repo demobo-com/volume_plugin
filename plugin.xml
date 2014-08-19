@@ -33,7 +33,6 @@ xmlns="http://apache.org/cordova/ns/plugins/1.0" >
 
 <source-file src="src/ios/VolumeListener/AppDelegate.h" />
 <source-file src="src/ios/VolumeListener/AppDelegate.m" />
-<source-file src="src/ios/VolumeListener/main.m" />
 <source-file src="src/ios/VolumeListener/silence.mp3" />
 <source-file src="src/ios/VolumeListener/VLViewController.h" />
 <source-file src="src/ios/VolumeListener/VLViewController.m" />
