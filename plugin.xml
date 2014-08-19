@@ -16,15 +16,15 @@ xmlns="http://apache.org/cordova/ns/plugins/1.0" >
     <engine name="cordova" version=">=2.9" />
 </engines>
 
-<js-module name="Volume" src="www/volume_plugin.js">
-<clobbers target="cordova.plugins.Volume" />
+<js-module name="VolumePlugin" src="www/volume_plugin.js">
+<clobbers target="cordova.plugins.VolumePlugin" />
 </js-module>
 
 <platform name="ios">
 
 <config-file parent="/*" target="config.xml">
-<feature name="Volume">
-<param name="ios-package" value="Volume" />
+<feature name="VolumePlugin">
+<param name="ios-package" value="VolumePlugin" />
 </feature>
 </config-file>
 
