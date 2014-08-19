@@ -9,8 +9,10 @@ volume_exports.echo = function(str, successCallback, failCallback) {
     if(failCallback == undefined) failCallback = function(){};
     if (str == undefined)
         str = "";
-    cordova.exec(successCallback, failCallback, "volume", "echo", [ str ]);
+    cordova.exec(successCallback, failCallback, "VolumePlugin", "echo", [ str ]);
 };
+
+window.echo = volume_exports.echo;
 
 module.exports = volume_exports;
 
